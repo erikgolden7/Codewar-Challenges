@@ -1,20 +1,16 @@
 # Codewar-Challenges
 
-1) n this simple exercise, you will build a program that takes a value, integer, and returns a list of its multiples up to another value, limit. If limit is a multiple of integer, it should be included as well. There will only ever be positive integers passed into the function, not consisting of 0. The limit will always be higher than the base.
+1) 
+
+In this simple exercise, you will build a program that takes a value, integer, and returns a list of its multiples up to another value, limit. If limit is a multiple of integer, it should be included as well. There will only ever be positive integers passed into the function, not consisting of 0. The limit will always be higher than the base.
     
-    For example, if the parameters passed are (2, 6), the funciton should return [2, 4, 6] as 2, 4, and 6 are the multiples of 2 up to 6.
-    
-    If you can, try writing it in only one line of code.
+  For example, if the parameters passed are (2, 6), the function should return [2, 4, 6] as 2, 4, and 6 are the multiples of 2 up to 6.
 
 ---
 
-function findMultiples(int,limit){
-  var count = 1,
-  myarray = [],
-  roundLimit = Math.floor(limit/int);
-  for(var i = 0; i < roundLimit; i++){
-    myarray.push(int * count);
-    count++;
-  }
-  return myarray;
-}
+2)
+Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his unfinished For Loop!
+
+---
+
+3)

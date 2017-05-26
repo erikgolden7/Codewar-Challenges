@@ -12,3 +12,17 @@ function findMultiples(int,limit){
 	return myarray;
 }
 findMultiples(2, 24);
+
+// Problem #2
+
+function createArray(number){
+	var newArray = [];
+	
+	for(var counter = 1; counter <= number; counter++){
+		newArray.push(counter);
+	}
+	
+	return newArray;
+}
+
+// Problem #3
