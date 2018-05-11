@@ -4,12 +4,8 @@
 
 // Solution: 
 
-function findShort(s){
+findShort = s => {
   let max = 99;
-   s.split(' ').forEach( e=> {
-     if(e.length < max){
-       max = e.length
-     }
-   })
+   s.split(' ').forEach( e => e.length < max ? max = e.length : '' )
   return max
-  }
+  } 
