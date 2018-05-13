@@ -18,9 +18,7 @@
 
 //   Solution:
 
+
 function songDecoder(song){
-  while(song.includes("WUB")){
-    song = song.replace(/WUB/i, ' ');
-  }
-  return song.replace(/ +(?= )/g,'').trim()
+  return song.replace(/(WUB)+/g," ").trim()
 }
