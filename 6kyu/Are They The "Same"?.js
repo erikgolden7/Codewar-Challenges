@@ -27,3 +27,17 @@
 // If a or b are empty the result is evident by itself.
 
 // Solution:
+
+function comp(a, b) {
+  if (!a || !b) return false;
+  if (a.length === 0 && b.length === 0) return true;
+
+  a = a.reduce((acc, curr) => (acc += curr));
+  b = b.map(e => Math.sqrt(e)).reduce((acc, curr) => (acc += curr));
+
+  if (a === b) {
+    return true;
+  }
+
+  return false;
+}
