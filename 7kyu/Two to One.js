@@ -20,3 +20,11 @@ function longest(s1, s2) {
     }, 0);
   return result.join('');
 }
+
+function longest(s1, s2) {
+  let longest = [];
+  s1.concat(s2)
+    .split('')
+    .map(e => (!longest.includes(e) ? longest.push(e) : ''));
+  return longest.sort().join('');
+}
